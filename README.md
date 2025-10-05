@@ -12,32 +12,57 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Thiago Nobre
+- Matricula: 976584
+- Proposta de projeto escolhida: portal de notícias
+- Breve descrição sobre seu projeto: notícias com desing engraçado
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![homepage](public/homepagenoticia.png)
 
 ## Print da página de detalhes do item
-
-<<  COLOQUE A IMAGEM AQUI >>
-
+![noticia1-detalhes](<public/noticia 1.png>)
+![noticia2-feitanojs](<public/noticia 2.png>)
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
+const noticias = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
-  }
-]
-```
+    id: 1,
+    slug: "stalking-saiba-identificar",
+    titulo: "Stalking: saiba identificar e o que fazer",
+    resumo:
+      "Médica do DF viralizou ao relatar perseguição; entenda o que é, quais as penas e como denunciar.",
+    imagem: "stalking.png",
+    imagemAlt: "Cena ilustrativa representando situação de perseguição",
+    categoria: "Segurança",
+    autor: "Thiago",
+    local: "Beaga",
+    dataPublicacao: "2025-10-05T09:18:00-03:00",
+    conteudo: {
+      paragrafos: [
+        "Centenas de mensagens ou ligações de uma mesma pessoa. Comentários invasivos em redes sociais. Perfis falsos que acompanham a rotina e a de familiares e amigos.",
+        "O caso ganhou repercussão com o relato de uma médica do Distrito Federal, que afirmou ser perseguida por um ex‑paciente há mais de quatro anos."
+      ],
+      secoes: [
+        {
+          titulo: "O que é stalking",
+          paragrafos: [
+            "Stalking é a perseguição reiterada que invade a privacidade e restringe a liberdade da vítima, podendo ocorrer online ou offline."
+          ]
+        },
+        {
+          titulo: "Como agir",
+          lista: [
+            "Documente todas as evidências (prints, áudios, datas, locais).",
+            "Evite contato direto com a pessoa e ajuste a privacidade das contas.",
+            "Registre boletim de ocorrência e busque medidas protetivas."
+          ]
+        }
+      ]
+    },
+    palavrasChave: ["stalking", "perseguição", "segurança"],
+    destino: "./detalhes.html?id=1"
+  },
+];
