@@ -3,7 +3,62 @@
     background-color: rgb(187, 192, 192);
     width: 100%;
     height: 70px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia;
     font-size:60px;
     text-align: center;
 }
+
+
+.card{
+  display: flex;              
+  flex-direction: row;    
+  gap: 12px;                 
+  max-width: 960px;           
+  margin: 24px auto;          
+}
+
+.card__img{
+  display: block;             
+  width: 100%;               
+  height: auto;               
+}
+
+.card__content{
+  background: #f8fafc;        
+  border: 1px solid #e5e7eb;  
+  border-radius: 12px;        
+  padding: 16px 20px;         
+}
+
+.card__title{ margin: 0 0 8px 0; }
+.card__excerpt{ margin: 0; }
+.card{ margin-top: 400px; } 
+.card {cursor: pointer}
+.card:hover {box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)}
+
+.card2{
+  display: flex;              
+  flex-direction: row;    
+  gap: 12px;                 
+  max-width: 960px;           
+  margin: 24px auto;          
+}
+
+.card2__img{
+  display: block;             
+  width: 100%;               
+  height: auto;               
+}
+
+.card2__content{
+  background: #f8fafc;        
+  border: 1px solid #e5e7eb;  
+  border-radius: 12px;        
+  padding: 16px 20px;         
+}
+
+.card2__title{ margin: 0 0 8px 0; }
+.card2__excerpt{ margin: 0; }
+.card2{ margin-top: 00px; } 
+.card2 {cursor: pointer}
+.card2:hover {box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)}
